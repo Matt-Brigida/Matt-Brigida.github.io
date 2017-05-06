@@ -1,0 +1,13 @@
+name: "my-website"
+output_dir: "."
+navbar:
+  title: "Matt Brigida's Research and Teaching Site"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Research"
+      href: research.html
+    - text: "Teaching"
+      href: teaching.html
+    - text: "Complete Markets"
+      href: complete-markets.html

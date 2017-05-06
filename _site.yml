@@ -1,10 +1,8 @@
 name: "my-website"
 output_dir: "."
 navbar:
-  title: "Matt Brigida's Research and Teaching Site"
+  title: "HOME"
   left:
-    - text: "Home"
-      href: index.html
     - text: "Research"
       href: research.html
     - text: "Teaching"

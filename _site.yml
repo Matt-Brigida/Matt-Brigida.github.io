@@ -5,6 +5,7 @@ navbar:
   left:
     - text: "Research"
       href: research.html
+      icon: fa-flask
     - text: "Teaching"
       icon: fa-graduation-cap
       #href: teaching.html
@@ -13,6 +14,7 @@ navbar:
            href: syllabus_summer_2017.html
     - text: "Complete Markets"
       href: complete-markets.html
+      icon: fa-bar-chart
 output:
   html_document:
     theme: cosmo

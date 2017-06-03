@@ -6,6 +6,7 @@ navbar:
     - text: "Research"
       href: research.html
     - text: "Teaching"
+      icon: fa-graduation-cap
       #href: teaching.html
       menu:
          - text: "FIN 570 Summer 2017"

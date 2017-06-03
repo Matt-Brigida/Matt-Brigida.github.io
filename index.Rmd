@@ -1,0 +1,8 @@
+---
+title: "Matt Brigida's Research and Teaching Site"
+author: "Matt Brigida"
+date: "May 5, 2017"
+output: html_document
+---
+
+This is the home for all new research and teaching materials.  

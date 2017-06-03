@@ -6,7 +6,10 @@ navbar:
     - text: "Research"
       href: research.html
     - text: "Teaching"
-      href: teaching.html
+      #href: teaching.html
+      menu:
+         - text: "FIN 570 Summer 2017"
+           href: syllabus_summer_2017.html
     - text: "Complete Markets"
       href: complete-markets.html
 output:

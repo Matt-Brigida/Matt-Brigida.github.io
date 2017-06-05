@@ -1,7 +1,7 @@
 name: "my-website"
 output_dir: "."
 navbar:
-  title: "HOME"
+  title: "Matt Brigida"
   icon: fa-home
   left:
     - text: "Research"
@@ -12,7 +12,7 @@ navbar:
       #href: teaching.html
       menu:
          - text: "FIN 570 Summer 2017"
-           href: syllabus_summer_2017.html
+           href: FIN_570_syllabus_summer_2017.html
     - text: "Complete Markets"
       href: complete-markets.html
       icon: fa-bar-chart

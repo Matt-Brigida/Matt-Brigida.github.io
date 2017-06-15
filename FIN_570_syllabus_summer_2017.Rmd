@@ -134,7 +134,9 @@ To receive credit your posts must be constructive, preferably somewhat insightfu
 
   This assignment will help you learn our Corporate Finance material by writing concise answers to finance questions.  In addition, your submitted Q/A will be used to train a finance Artificial Intelligence.  I will feed the Q/A into a deep neural network to train a chatbot that can answer finance questions---think Siri for finance.   
 
-I have created a file for Q/A for this course https://github.com/finance-AI/data/blob/master/studentQA/studentQA_570_summer_2017.txt.  Submit your Q/A there and put the link to the commit in D2L's dropbox.  Adding to the file is easy---[see this video for a short tutorial](https://www.youtube.com/watch?v=iVC9UKkaiko), and [This is an example of a link to a commit.](https://github.com/FinancialMarkets/5MinuteFinance/commit/8f12f63b546a80fdb04e787514d967f1a1c0725f)
+I have created a file for Q/A for this course https://github.com/finance-AI/data/blob/master/studentQA/studentQA_570_summer_2017.txt.  Submit your Q/A there.  Adding to the file is easy---[see this video for a short tutorial](https://www.youtube.com/watch?v=iVC9UKkaiko), and [This is an example of a link to a commit.](https://github.com/FinancialMarkets/5MinuteFinance/commit/8f12f63b546a80fdb04e787514d967f1a1c0725f)
+
+If your GitHub username is similar to your real name, then you don't have to tell me you have submitted the Q/A (I'll see it).  If your username is different, then send me an email from your clarion email address with the Subject "FIN 570 Q/A" letting me know your real name and GitHub username.  Note, GitHub shows how many lines you have added, so there is no need to number your questions.  Also, don't label the questions and answers. 
 
 <center>
 **HOMEWORK/POP QUIZZES/OTHER PARTICIPATION**

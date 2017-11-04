@@ -1,8 +1,8 @@
 ---
-title: "Matt Brigida's Research and Teaching Site"
+title: "Matt Brigida's Preliminary Research and Teaching Materials"
 author: "Matt Brigida"
 date: "May 5, 2017"
 output: html_document
 ---
 
-This is the home for all new research and teaching materials.  
+This is the home for all new research and teaching projects.  Much of what is here is prelimiary, and shouldn't be cited.

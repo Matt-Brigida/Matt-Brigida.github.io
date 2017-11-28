@@ -17,7 +17,7 @@ navbar:
       #href: teaching.html
       menu:
          - text: "FIN 570 Winter 2017"
-           #href: FIN_570_syllabus_summer_2017.html
+           href: syllabus570.html
            menu:
               - text: "Syllabus"
               - text: "Supplementary Materials"

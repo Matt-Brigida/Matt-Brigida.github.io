@@ -18,9 +18,9 @@ navbar:
       menu:
          - text: "FIN 570 Winter 2017"
            href: syllabus570.html
-           menu:
-              - text: "Syllabus"
-              - text: "Supplementary Materials"
+           # menu:
+           #    - text: "Syllabus"
+           #    - text: "Supplementary Materials"
     - text: "Complete Markets"
       href: complete-markets.html
       icon: fa-bar-chart

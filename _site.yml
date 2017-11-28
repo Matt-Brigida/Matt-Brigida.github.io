@@ -16,8 +16,11 @@ navbar:
       icon: fa-graduation-cap
       #href: teaching.html
       menu:
-         - text: "FIN 570 Summer 2017"
-           href: FIN_570_syllabus_summer_2017.html
+         - text: "FIN 570 Winter 2017"
+           #href: FIN_570_syllabus_summer_2017.html
+           menu:
+              - text: "Syllabus"
+              - text: "Supplementary Materials"
     - text: "Complete Markets"
       href: complete-markets.html
       icon: fa-bar-chart

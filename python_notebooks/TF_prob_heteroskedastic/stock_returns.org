@@ -6,6 +6,7 @@ Below we'll compare tensorflow probability with a traditional ARCH/GARCH model.
 
 #+begin_src python :session :results output :exports both 
 import tensorflow as tf
+import keras
 import tensorflow_probability as tfp
 import json
 import requests
@@ -255,20 +256,49 @@ print(spy_rets)
 
 *** Take a look at the data
 
-#+begin_src python :session :results output :exports both
+#+begin_src python :session :results file :exports both
 sns.distplot(aapl_rets)
 plt.title("AAPL")
 plt.show()
+plt.savefig('test.png')
+return 'test.png'
 #+end_src
 
 #+RESULTS:
-: <matplotlib.axes._subplots.AxesSubplot object at 0x7f2e1a2b7898>
-: Text(0.5, 1.0, 'AAPL')
+[[file:Text(0.5, 1.0, 'AAPL')]]
 
 
+#+begin_src python :session :results file :exports both
+sns.scatterplot(x="spy_rets", y="aapl_rets")
+plt.title("Scatter")
+plt.show()
+plt.savefig('test2.png')
+return 'test2.png'
+#+end_src
+
+#+RESULTS:
 
 ** Create TF Probability Model
    
 
+Model from here: https://www.youtube.com/watch?v=BrwKURU-wpk
 
 
+
+
+
+#+begin_src python :session :results output :exports both 
+model = tf.keras.Sequential([
+    tf.keras.layers.Dense(100),
+    tf.keras.layers.Dense(1),
+    tfp.layers.DistributionLambda(lambda t:
+       tfd.Normal(loc=t[...,0],
+       scale=1)),
+])
+#+end_src
+
+#+RESULTS:
+: 
+: ... ... ... ... ... Traceback (most recent call last):
+:   File "<stdin>", line 4, in <module>
+: AttributeError: module 'tensorflow_probability.python.layers' has no attribute 'DistributionLambda'

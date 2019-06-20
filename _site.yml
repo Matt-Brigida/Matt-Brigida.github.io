@@ -8,10 +8,20 @@ navbar:
       #href: research.html
       icon: fa-flask
       menu:
+         - text: "Competitive Adjustment to New Information at High Frequency"
+           href: https://matt-brigida.github.io/Information-Flow-Algorithms-and-the-2016-Election/
          - text: "FDIC Dataset Analyses"
            href: FDIC_dataset_analyses.html
          - text: "HFT in the Natural Gas Futures Market"
            href: NG_HFT.html
+    - text: "Machine Learning"
+      #href: research.html
+      icon: fa-flask
+      menu:
+         - text: "Panel vs ML"
+           href: 
+         - text: "Option Pricing"
+           href: 
     - text: "Teaching"
       icon: fa-graduation-cap
       #href: teaching.html

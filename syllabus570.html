@@ -26,7 +26,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -39,7 +40,7 @@ if (window.hljs) {
   hljs.configure({languages: []});
   hljs.initHighlightingOnLoad();
   if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlightingOnLoad(); }, 0);
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
   }
 }
 </script>
@@ -74,9 +75,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -95,8 +94,14 @@ img {
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -112,7 +117,6 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
-
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -132,6 +136,43 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -153,18 +194,75 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -259,6 +357,16 @@ div.tocify {
 
 </style>
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
 <div class="col-xs-12 col-sm-4 col-md-3">
@@ -293,11 +401,27 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
+      <a href="https://matt-brigida.github.io/Information-Flow-Algorithms-and-the-2016-Election/">Competitive Adjustment to New Information at High Frequency</a>
+    </li>
+    <li>
       <a href="FDIC_dataset_analyses.html">FDIC Dataset Analyses</a>
     </li>
     <li>
       <a href="NG_HFT.html">HFT in the Natural Gas Futures Market</a>
     </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-flask"></span>
+     
+    Machine Learning
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Panel vs ML</li>
+    <li class="dropdown-header">Option Pricing</li>
   </ul>
 </li>
 <li class="dropdown">
@@ -334,12 +458,12 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">FIN 570: Managerial Finance</h1>
-<h4 class="date"><em>December 1, 2017</em></h4>
+<h4 class="date">December 1, 2017</h4>
 
 </div>
 
 
-<section id="syllabus" class="level1">
+<div id="syllabus" class="section level1">
 <h1>Syllabus</h1>
 <center>
 <p>CLARION UNIVERSITY OF PENNSYLVANIA</p>
@@ -349,7 +473,7 @@ Winter 2017
 </center>
 <p><strong>Instructor</strong>: Dr. Matthew Brigida</p>
 <p><strong>Office</strong>: Still Hall 318</p>
-<p><strong>Email</strong>: <a href="mailto:mbrigida@clarion.edu">mbrigida@clarion.edu</a></p>
+<p><strong>Email</strong>: <a href="mailto:mbrigida@clarion.edu" class="email">mbrigida@clarion.edu</a></p>
 <p><strong>Course Start Date</strong>: December 18th, 2017</p>
 <p><strong>Course End Date</strong>: January 19th, 2017</p>
 <p><strong>Class Location</strong>: Online (in D2L)</p>
@@ -357,7 +481,7 @@ Winter 2017
 <!-- **Important Dates** -->
 <!-- **Midterm Exam:**  Due 6/24 @ 3:00pm EST -->
 <!-- **Final Exam:**  Due 7/8 @ 3:00pm EST -->
-<section id="description" class="level2">
+<div id="description" class="section level2">
 <h2>Description</h2>
 <p>The assessment of financial techniques to determine how they affect the business both internally and externally. The learning outcomes for this course are summarized below:</p>
 <ol>
@@ -366,17 +490,17 @@ Winter 2017
 <li><p>To understand capital structure, and the methods of adjusting such structure particularly through stock repurchases, dividends, and security issuance.</p></li>
 <li><p>Analysis of working capital in order to anticipate the future cash flow of the firm.</p></li>
 </ol>
-</section>
-<section id="academic-honesty-policy" class="level2">
+</div>
+<div id="academic-honesty-policy" class="section level2">
 <h2>Academic Honesty Policy</h2>
 <p>Academic dishonesty will not be tolerated in this class. Cheating on quizzes, examinations, and other forms of dishonesty (e.g., plagiarism, collusion, and falsification of data) will be dealt with in a serious and formal manner. The penalty for academic dishonesty in this class will be course failure. That is, any student who is found to be cheating or engaged in other academically dishonest behavior will be failed for this course for this semester. Course withdrawals to avoid such a failure will not be permitted. As a student, you have a responsibility to become familiar with the Academic Honesty Policy found in the Student Rights, Regulations, and Procedures Handbook.</p>
-</section>
-<section id="online-office-hours" class="level2">
+</div>
+<div id="online-office-hours" class="section level2">
 <h2>Online Office Hours</h2>
 <p>I will be logged on the course D2L site throughout the week, and I will also periodically access the Discussion Forums.</p>
 <p>Students do not need to access the course simultaneously, and therefore have a measure of flexibility regarding when they access the course. However, students should access the course regularly to keep up with assignments, and to maintain a presence in the Discussion Room. Students should also often check their Clarion University email account.</p>
-</section>
-<section id="exams" class="level2">
+</div>
+<div id="exams" class="section level2">
 <h2>Exams</h2>
 <p>There will be two exams (a midterm and a final). The exams will mainly be comprised of conceptual, and computation questions. Many of the exam questions will be derived from the assigned end-of-chapter questions, so you can prepare for the exam by completing all of the end-of-chapter questions. Specifically, the discussion (<em>Concept Questions</em>) are similar to the short answer questions, and the <em>Optimal Homework</em> is similar to the computations.</p>
 <p>While you are allowed to use your text during the exam, you should not rely on it. Students perform considerably better if they know the material beforehand, and only need to consult the text for a few questions.</p>
@@ -398,8 +522,8 @@ Winter 2017
 <p><strong>You must complete and submit your computation questions in a spreadsheet. If you submiy your computation answers in Word, I will reduce your score. You should also not treat your spreadsheet as a Word or text file. That is answers should be written as formulas, and not as text strings.</strong></p>
 <p><strong>If your spreadsheet is disorganized you will lose points. The computations and answers should be easily found and understood by anyone opening your spreadsheet. See the ‘Note on Spreadsheet Design’ at the end of this syllabus.</strong> <!-- <center> --> <!-- % **PROJECT** --> <!-- </center> --> <!-- % In groups of no more than 4, you will value a tolling agreement on an electricity generating facility, or transmission line.  You will deliver your valuation to me in an well laid out spreadsheet.  A more detailed description of the project will be provided in the first few weeks of class. --></p>
 <!-- % If you have questions on your project you are encouraged to post your spreadsheet so I and other students can help.  You learn a great deal by helping others, and by seeing how others approach the problem.  Also don't worry too much about another group copying you.  It is easy for me to tell when one spreadsheet has been copied from another.  Moreover, since you posted yours, it would be clear that you were the one copied off of, and the other group would receive the reduction in points.   -->
-</section>
-<section id="participation" class="level2">
+</div>
+<div id="participation" class="section level2">
 <h2>Participation</h2>
 <p>There are two ways to satisfy the 40 participation points. You can:</p>
 <ol>
@@ -414,22 +538,22 @@ Winter 2017
 <p>To receive credit your posts must be constructive, preferably somewhat insightful, and show you have done the reading. If your post does not meet the preceding criteria, please don’t bother posting it because it will just clutter the discussion board. A particular week’s discussion will conclude Sunday at 9pm of that week. Don’t post to the week’s discussion after that date/time.</p>
 <p><strong>2. Q/A:</strong> You should post finance related short questions and answers similar to what you find at <a href="https://github.com/finance-AI/data/blob/master/studentQA/studentQA_fall_2016.txt" class="uri">https://github.com/finance-AI/data/blob/master/studentQA/studentQA_fall_2016.txt</a>. These are submission from an earlier class. You should submit your Q/A in the same format.</p>
 <p>This assignment will help you learn our Corporate Finance material by writing concise answers to finance questions. In addition, your submitted Q/A will be used to train a finance Artificial Intelligence. I will feed the Q/A into a deep neural network to train a chatbot that can answer finance questions—think Siri for finance.</p>
-<p>I have created a file for Q/A for this course <a href="https://github.com/finance-AI/data/blob/master/studentQA/studentQA_570_winter_2017.txt" class="uri">https://github.com/finance-AI/data/blob/master/studentQA/studentQA_570_winter_2017.txt</a>. Submit your Q/A there. Adding to the file is easy—<a href="https://www.youtube.com/watch?v=iVC9UKkaiko">see this video for a short tutorial</a>, and <a href="https://github.com/FinancialMarkets/5MinuteFinance/commit/8f12f63b546a80fdb04e787514d967f1a1c0725f">This is an example of a link to a commit.</a></p>
+<p>I have created a file for Q/A for this course <a href="https://github.com/finance-AI/data/blob/master/studentQA/studentQA_570_winter_2017.txt">https://github.com/finance-AI/data/blob/master/studentQA/studentQA_570_winter_2017.txt</a>. Submit your Q/A there. Adding to the file is easy—<a href="https://www.youtube.com/watch?v=iVC9UKkaiko">see this video for a short tutorial</a>, and <a href="https://github.com/FinancialMarkets/5MinuteFinance/commit/8f12f63b546a80fdb04e787514d967f1a1c0725f">This is an example of a link to a commit.</a></p>
 <p>If your GitHub username is similar to your real name, then you don’t have to tell me you have submitted the Q/A (I’ll see it). If your username is different, then send me an email from your clarion email address with the Subject “FIN 570 Q/A” letting me know your real name and GitHub username. Note, GitHub shows how many lines you have added, so there is no need to number your questions. Also, don’t label the questions and answers.</p>
-</section>
-<section id="homeworkpop-quizzesother-participation" class="level2">
+</div>
+<div id="homeworkpop-quizzesother-participation" class="section level2">
 <h2>Homework/Pop Quizzes/Other Participation</h2>
 <p>Throughout the semester I <strong>may</strong> assign brief homeworks, or unannounced in-class quizzes. The nature of these is usually to highlight an important point, or give the class extra practice on certain material. You start with 10 final grade points, and your points are reduced the more you get incorrect. However, for example, if I only assign two points of homework and no quizzes or other assignments, then you receive 8 points no matter what, and the remaining 2 points depend on the correctness of you answers.</p>
-</section>
-<section id="optional-homework" class="level2">
+</div>
+<div id="optional-homework" class="section level2">
 <h2>Optional Homework</h2>
 <p>I will post a set of optional homework questions. These are end-of-chapter problems to be done in a spreadsheet. The questions are very much like the spreadsheet problems which will be on the exam. Also, on the exams you may use the spreadsheets that <em>you</em> created to complete the optional homework questions. Do not copy from another student’s spreadsheet however.</p>
-</section>
-<section id="course-communication" class="level2">
+</div>
+<div id="course-communication" class="section level2">
 <h2>Course Communication</h2>
 <p>All communication will be through D2L and email. If you have question you are strongly encouraged to post it to a discussion forum instead of emailing me. This way, other students can get the benefit of the question and answer. It also saves me from answering the same question many times via email, and frees me up to answer more questions and generally provide more effective instruction for you.</p>
-</section>
-<section id="grading" class="level2">
+</div>
+<div id="grading" class="section level2">
 <h2>Grading</h2>
 <center>
 <table>
@@ -473,8 +597,8 @@ Winter 2017
 <li>60 - 69.9 D</li>
 <li><span class="math inline">\(&lt;\)</span> 60 F</li>
 </ul>
-</section>
-<section id="general-notes" class="level2">
+</div>
+<div id="general-notes" class="section level2">
 <h2>General Notes</h2>
 <ul>
 <li>All times referred to in this course are Eastern Standard—unless otherwise indicated.</li>
@@ -486,8 +610,8 @@ Winter 2017
 <li><strong>Adding or Dropping the Course:</strong> To add or drop the course the student should consult the university guidelines and withdrawal dates. The course instructor is not involved in a student’s adding or withdrawing from the course.</li>
 <li><strong>Software:</strong> You will need word processing and spreadsheet software to take this course. Common examples of such software are Microsoft Word and Excel. However, there is no need to buy this software if you don’t already have it. There are many free (open-source) alternatives which are just as good (and which allow you to save/read files as .doc(x), .pdf, and .xls(x)). Some widely used free office suites are LibreOffice (<a href="http://www.libreoffice.org" class="uri">http://www.libreoffice.org</a>) and OpenOffice (<a href="http://www.openoffice.org" class="uri">http://www.openoffice.org</a>). Feel free to download and use these. <em>In this course all word processed submissions should be in .pdf, and all spreadsheets should be submitted as .xlsx.</em></li>
 </ul>
-</section>
-<section id="tentative-outline" class="level2">
+</div>
+<div id="tentative-outline" class="section level2">
 <h2>Tentative Outline</h2>
 <ul>
 <li><p>December 18: Chapters 1, 2, 3 &amp; 4</p></li>
@@ -497,8 +621,8 @@ Winter 2017
 <li><p>January 15: Chapters 16 &amp; 17</p></li>
 </ul>
 <p>*Chp. 13 requires you to calculate the yield-to-maturity (YTM) on a bond, which is a topic from FIN 370 and chapter 8 of the present text. However, YTM is nothing more than the annualized internal rate of return (IRR) (we cover IRR in chapter 5 of the text) of the bond. So list the cash flows of the bond and apply Excel’s IRR() function. Annualize the IRR by multiplying the value by the number of periods in a year.</p>
-</section>
-<section id="a-note-on-spreadsheet-design" class="level2">
+</div>
+<div id="a-note-on-spreadsheet-design" class="section level2">
 <h2>A Note on Spreadsheet Design</h2>
 <p>You should construct your spreadsheet as if you were an analyst at a company, and you were going to submit the spreadsheet to upper management. Therefore, getting the correct answer can be considered the minimal amount of work. The spreadsheet should be easily readable and organized. There are a couple of reasons why this is important: (1) management often will check some numbers (or maybe change a few inputs if they have more up to date information) and it will reflect very poorly on you if they have to search around through a muddled and ill-conceived spreadsheet; and (2) anyone should be able to pick up your spreadsheet and complete it if you are not there (vacation, sick, or hopefully promoted). Following are a couple tips on spreadsheet design, though it is far from exhaustive.</p>
 <ul>
@@ -511,8 +635,8 @@ Winter 2017
 <li>If you are inputting a long formula, then break the calculation into multiple cells. This makes it much easier to tell where a mistake was made - and everyone always spends a fair amount of time looking for errors.</li>
 <li>Excel has many built in formulas which can be useful, however it is important that you understand what the formula is doing to use them. Blindly applying a formula can lead to trouble. For example, if you use the IRR() function on cash flows with multiple roots, the formula will return the first root it finds without signaling to you that there are other roots. Also, there are Excel formulas that are flat out incorrect - in particular the NPV() function. So, use a function if it saves time, but first be sure you know what the function is doing and verify it works. That said, in my experience it is better (and faster) to input your own formula instead of using Excel’s. You often have to break the calculation into a couple of steps, but this can be done quickly, and the result is a spreadsheet that you know works and is easily auditable.</li>
 </ul>
-</section>
-</section>
+</div>
+</div>
 
 
 

@@ -8,6 +8,8 @@ navbar:
       #href: research.html
       icon: fa-flask
       menu:
+         - text: "The Effect of Bank Regulatory Capital Levels on Loan Types"
+           href: https://github.com/Matt-Brigida/research-public/blob/master/T1_effect_revenue.pdf
          - text: "Competitive Adjustment to New Information at High Frequency"
            href: https://matt-brigida.github.io/Information-Flow-Algorithms-and-the-2016-Election/
          - text: "FDIC Dataset Analyses"

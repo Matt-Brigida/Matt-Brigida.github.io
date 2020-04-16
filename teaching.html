@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 <meta name="author" content="Matt Brigida" />
@@ -15,6 +15,7 @@
 
 <title>Teaching</title>
 
+<script src="site_libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -87,7 +88,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -236,6 +236,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -247,18 +248,6 @@ $(document).ready(function () {
   display: none;
 }
 </style>
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
 
 <!-- code folding -->
 
@@ -289,9 +278,9 @@ $(document).ready(function () {
       <ul class="nav navbar-nav">
         <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    <span class="fa fa-flask"></span>
+    <span class="fa fa-bar-chart"></span>
      
-    Research
+    Working Papers and Presentations
      
     <span class="caret"></span>
   </a>
@@ -321,6 +310,9 @@ $(document).ready(function () {
   <ul class="dropdown-menu" role="menu">
     <li class="dropdown-header">Panel vs ML</li>
     <li class="dropdown-header">Option Pricing</li>
+    <li>
+      <a href="https://github.com/finance-AI/first_TF_chatbot">Finance Chatbot</a>
+    </li>
   </ul>
 </li>
 <li class="dropdown">
@@ -333,16 +325,15 @@ $(document).ready(function () {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="syllabus570.html">FIN 570 Winter 2017</a>
+      <a href="https://financial-education.github.io/">Financial Education (GitHub)</a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/channel/UCwekb0vAK-FKaqPF5gfd0eQ">YouTube Channel</a>
+    </li>
+    <li>
+      <a href="https://suny-poly-finance.github.io/">SUNY Poly Finance</a>
     </li>
   </ul>
-</li>
-<li>
-  <a href="complete-markets.html">
-    <span class="fa fa-bar-chart"></span>
-     
-    Complete Markets
-  </a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -382,6 +373,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

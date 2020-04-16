@@ -1,8 +1,14 @@
 ---
-title: "Matt Brigida's Preliminary Research and Teaching Materials"
+title: "Matt Brigida's Preliminary Research and Trading Materials"
 author: "Matt Brigida"
 date: "May 5, 2017"
 output: html_document
 ---
 
-This is the home for all new research and teaching projects.  Much of what is here is prelimiary, and shouldn't be cited.
+This is the home for all new research and trading projects.  Much of what is here is prelimiary, and shouldn't be cited.
+
+If you are interested in teaching materials, see [this financial education site](https://financial-education.github.io).
+
+
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0003-1937-2712" href="https://orcid.org/0000-0003-1937-2712" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0003-1937-2712</a></div>

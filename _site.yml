@@ -4,9 +4,9 @@ navbar:
   title: "Matt Brigida"
   icon: fa-home
   left:
-    - text: "Research"
+    - text: "Working Papers and Presentations"
       #href: research.html
-      icon: fa-flask
+      icon: fa-bar-chart
       menu:
          - text: "The Effect of Bank Regulatory Capital Levels on Loan Types"
            href: https://github.com/Matt-Brigida/research-public/blob/master/T1_effect_revenue.pdf
@@ -23,19 +23,25 @@ navbar:
          - text: "Panel vs ML"
            href: 
          - text: "Option Pricing"
-           href: 
+           href:
+         - text: "Finance Chatbot"
+           href: https://github.com/finance-AI/first_TF_chatbot
     - text: "Teaching"
       icon: fa-graduation-cap
       #href: teaching.html
       menu:
-         - text: "FIN 570 Winter 2017"
-           href: syllabus570.html
+         - text: "Financial Education (GitHub)"
+           href: https://financial-education.github.io/
+         - text: "YouTube Channel"
+           href: https://www.youtube.com/channel/UCwekb0vAK-FKaqPF5gfd0eQ
+         - text: "SUNY Poly Finance"
+           href: https://suny-poly-finance.github.io/
            # menu:
            #    - text: "Syllabus"
            #    - text: "Supplementary Materials"
-    - text: "Complete Markets"
-      href: complete-markets.html
-      icon: fa-bar-chart
+    # - text: "Complete Markets"
+    #   href: complete-markets.html
+    #   icon: fa-bar-chart
 output:
   html_document:
     theme: cosmo

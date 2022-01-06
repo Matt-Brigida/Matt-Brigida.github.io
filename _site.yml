@@ -16,6 +16,8 @@ navbar:
            href: FDIC_dataset_analyses.html
          - text: "HFT in the Natural Gas Futures Market"
            href: NG_HFT.html
+         - text: "Credit Default Swaps and Bank Safety"
+           href: https://matt-brigida.github.io/cds_paper_presentation/
     - text: "Machine Learning"
       #href: research.html
       icon: fa-flask

@@ -8,6 +8,8 @@ navbar:
       #href: research.html
       icon: fa-bar-chart
       menu:
+         - text: "Time-Varying Volatility of Bank Betas"
+           href: /papers/BRIGIDA_vol_bank_betas.pdf
          - text: "The Effect of Bank Regulatory Capital Levels on Loan Types"
            href: https://github.com/Matt-Brigida/research-public/blob/master/T1_effect_revenue.pdf
          - text: "Competitive Adjustment to New Information at High Frequency"

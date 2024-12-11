@@ -1,7 +1,7 @@
 ---
 title: "Matt Brigida's Preliminary Research and Trading Materials"
 author: "Matt Brigida"
-date: "May 5, 2017"
+date: "December 12, 2024"
 output: html_document
 ---
 

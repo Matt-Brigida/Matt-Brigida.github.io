@@ -13,12 +13,12 @@ output: html_document
 
 <div class="flex-container">
 
-I am a Professor of Finance and Chair of the Accounting and Finance Department at the [SUNY Polytechnic Institute](https://sunypoly.edu/).   You can find [my published research work on Google Scholar](https://scholar.google.com/citations?user=CvW8NYUAAAAJ&hl=en), and by my [ORCID researcher identifier](https://orcid.org/0000-0003-1937-2712).  My CV is also available above.  The *Working Paper* link above lists much of my work in progress.  Much of my present work is on topics related to the 2023 Regional Banking crisis. I also have recently published research on crypto and electricity powers swaps.
+I am a Professor of Finance and Chair of the Accounting and Finance Department at the [SUNY Polytechnic Institute](https://sunypoly.edu/).   You can find [my published research work on Google Scholar](https://scholar.google.com/citations?user=CvW8NYUAAAAJ&hl=en), and by my [ORCID researcher identifier](https://orcid.org/0000-0003-1937-2712).  My CV is also available above.  The *Working Paper* link above lists much of my work in progress.  Much of my present work is on topics related to the 2023 Regional Banking crisis. I also have projects the effect of ethical tuning on LLM risk-taking, the impact of noise in training deep neural networks,  on decentralized crypto exchanges, and electricity powers swaps.
 
-<img style="display: block; margin: auto;" src="./various/pic_front_chalkboard.JPG" width="800">
+<img style="display: block; margin: auto;" src="./various/pic_front_chalkboard.JPG" width="900">
 
 </div>
 
-If you are interested in teaching materials, see [this financial education site](https://financial-education.github.io).  The site contains links to interactive lecture notes.
+If you are interested in teaching materials, see [this financial education site](https://financial-education.github.io).  The site contains links to interactive lecture notes covering topics in finance and machine learning.
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0003-1937-2712" href="https://orcid.org/0000-0003-1937-2712" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0003-1937-2712</a></div>

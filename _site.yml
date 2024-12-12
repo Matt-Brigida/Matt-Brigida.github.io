@@ -22,6 +22,10 @@ navbar:
            href: https://matt-brigida.github.io/tv_vol_bank_beta/
          - text: "The Determinants of Uninsured Deposits"
            href: /papers/BRIGIDA_uninsured_dep.pdf
+         - text: "The Market Value of Decentralization"
+           href: /papers/BRIGIDA_DEX_Crypto.pdf
+         - text: "Diversification in Electricity Price and Volume Swaps"
+           href: /papers/BRIGIDA_NEE_swap.pdf
          - text: "The Effect of Bank Regulatory Capital Levels on Loan Types"
            href: https://github.com/Matt-Brigida/research-public/blob/master/T1_effect_revenue.pdf
          - text: "Competitive Adjustment to New Information at High Frequency"
@@ -42,16 +46,16 @@ navbar:
            href: https://www.youtube.com/channel/UCwekb0vAK-FKaqPF5gfd0eQ
 #         - text: "SUNY Poly Finance"
 #           href: https://suny-poly-finance.github.io/
-    - text: "Machine Learning"
-      #href: research.html
-      icon: fa-flask
-      menu:
-         - text: "Panel vs ML"
-           href: 
-         - text: "Option Pricing"
-           href:
-         - text: "Finance Chatbot"
-           href: https://github.com/finance-AI/first_TF_chatbot
+#     - text: "Machine Learning"
+#       #href: research.html
+#       icon: fa-flask
+#       menu:
+#          - text: "Panel vs ML"
+#            href: 
+#          - text: "Option Pricing"
+#            href:
+#          - text: "Finance Chatbot"
+#            href: https://github.com/finance-AI/first_TF_chatbot
 output:
   html_document:
     theme: cosmo

@@ -20,6 +20,14 @@ navbar:
            href: NG_HFT.html
          - text: "Credit Default Swaps and Bank Safety"
            href: https://matt-brigida.github.io/cds_paper_presentation/
+    - text: "CV and Resume"
+      #href: research.html
+      icon: fa-folder-open
+      menu:
+         - text: "CV"
+           href: https://github.com/Matt-Brigida/job_market_materials/blob/master/CV/Brigida_CV.pdf
+         - text: "Resume"
+           href:
     - text: "Machine Learning"
       #href: research.html
       icon: fa-flask

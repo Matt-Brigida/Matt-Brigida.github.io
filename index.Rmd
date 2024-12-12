@@ -17,11 +17,10 @@ output: html_document
 
 I am a Professor of Finance and Chair of the Accounting and Finance Department at the SUNY Polytechnic Institute.   You can find [my published research work on Google Scholar](https://scholar.google.com/citations?user=CvW8NYUAAAAJ&hl=en), and my ORCID researcher identifier is below.  My CV is also available above.
 
-The *Working Paper* link above lists much of my work in progress.  Much of my present work is on topics related to the 2023 Regional Banking crisis. I also have recently published research on crypto and electricity powers swaps.
-
-
 <img style="display: block; margin: auto;" src="./various/pic_front_chalkboard.JPG" width="500">
 </div>
+
+The *Working Paper* link above lists much of my work in progress.  Much of my present work is on topics related to the 2023 Regional Banking crisis. I also have recently published research on crypto and electricity powers swaps.
 
 If you are interested in teaching materials, see [this financial education site](https://financial-education.github.io).
 

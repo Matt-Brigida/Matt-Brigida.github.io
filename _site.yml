@@ -6,7 +6,7 @@ navbar:
   left:
     - text: "CV and Resume"
       #href: research.html
-      icon: fa-folder-open
+      icon: fa-handshake
       menu:
          - text: "CV"
            href: https://github.com/Matt-Brigida/job_market_materials/blob/master/CV/Brigida_CV.pdf

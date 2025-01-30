@@ -22,6 +22,8 @@ navbar:
            href: https://matt-brigida.github.io/tv_vol_bank_beta/
          - text: "The Determinants of Uninsured Deposits"
            href: /papers/BRIGIDA_uninsured_dep.pdf
+         - text: "Hedging Deposit Run Risk Prior to the 2023 Regional Banking Crisis"
+           href: /papers/hedge_deposit_run_risk_brigida.pdf
          - text: "The Market Value of Decentralization"
            href: /papers/BRIGIDA_DEX_Crypto.pdf
          - text: "Diversification in Electricity Price and Volume Swaps"
